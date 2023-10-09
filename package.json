@@ -1,0 +1,14 @@
+{
+  "name": "discordgame",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.0",
+    "forever": "^4.0.3",
+    "winston": "^3.3.3"
+  }
+}
