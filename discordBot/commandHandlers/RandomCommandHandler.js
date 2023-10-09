@@ -28,9 +28,9 @@ class RandomCommandHandler {
         ephemeral: false,
     });
     const randomID = random.getRandomInt(1, 7000);
-    let randomImgURL = `https://digital-nomads.s3.amazonaws.com/img/${randomID}.png`;
+    let randomImgURL = `https://digital-nomads.s3.amazonaws.com/img/${randomID}.png?r=${Math.random()}`;
     if (randomID === 6238 || randomID === 6923) {
-        randomImgURL = `https://digital-nomads.s3.amazonaws.com/img/${randomID}.gif`;
+        randomImgURL = `https://digital-nomads.s3.amazonaws.com/img/${randomID}.gif?r=${Math.random()}`;
     }
 
     const embedFileObject = new EmbedBuilder()

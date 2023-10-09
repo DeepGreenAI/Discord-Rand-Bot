@@ -41,9 +41,9 @@ class RandomCommandHandler {
         content: `getting Digital Nomad...`,
         ephemeral: false,
     });
-    let imgURL = `https://digital-nomads.s3.amazonaws.com/img/${tokenID}.png`;
+    let imgURL = `https://digital-nomads.s3.amazonaws.com/img/${tokenID}.png?r=${Math.random()}`;
     if (tokenID === 6238 || tokenID === 6923) {
-      imgURL = `https://digital-nomads.s3.amazonaws.com/img/${tokenID}.gif`;
+      imgURL = `https://digital-nomads.s3.amazonaws.com/img/${tokenID}.gif?r=${Math.random()}`;
     }
 
     const embedFileObject = new  EmbedBuilder()
